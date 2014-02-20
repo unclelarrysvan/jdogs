@@ -1,0 +1,21 @@
+#production:
+#  adapter: sqlite3
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeout: 5000
+
+development:
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  database: jdogs
+  username: root
+  password: im1coolguy
+
+test:
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  database: jdogs_test
+  username: root
+  password: im1coolguy
