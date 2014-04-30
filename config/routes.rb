@@ -1,4 +1,10 @@
 Jdogs::Application.routes.draw do
+  resources :events
+
+  resources :customers
+
+  resources :categories
+
   resources :products
 
   root to: 'products#index'
