@@ -6,7 +6,7 @@
   .control-group
     = f.label :customer_id, :class => 'control-label'
     .controls
-      = f.text_field :customer_id, :class => 'text_field'
+      = f.select :customer_id, @customers.all.collect {|c| [c.name, c.id]}, prompt: 'Choose a customer'
   .control-group
     = f.label :start_datetime, :class => 'control-label'
     .controls
