@@ -11,6 +11,26 @@
     = f.label :start_datetime, :class => 'control-label'
     .controls
       = f.text_field :start_datetime, :class => 'text_field'
+  .control-group
+    = f.label :address1, :class => 'control-label'
+    .controls
+      = f.text_field :address1, :class => 'text_field'
+  .control-group
+    = f.label :address2, :class => 'control-label'
+    .controls
+      = f.text_field :address2, :class => 'text_field'
+  .control-group
+    = f.label :city, :class => 'control-label'
+    .controls
+      = f.text_field :city, :class => 'text_field'
+  .control-group
+    = f.label :state, :class => 'control-label'
+    .controls
+      = f.text_field :state, :class => 'text_field'
+  .control-group
+    = f.label :zip, :class => 'control-label'
+    .controls
+      = f.text_field :zip, :class => 'text_field'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), events_path, :class => 'btn'
