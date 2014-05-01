@@ -1,24 +1,19 @@
-production:
+common: &common
   adapter: mysql2
   encoding: utf8
   reconnect: false
   pool: 5
-  database: jdogs
   username: root
   password: im1coolguy
+
+production:
+  <<: *common
+  database: jdogs
 
 development:
-  adapter: mysql2
-  pool: 5
-  timeout: 5000
+  <<: *common
   database: jdogs
-  username: root
-  password: im1coolguy
 
 test:
-  adapter: mysql2
-  pool: 5
-  timeout: 5000
+  <<: *common
   database: jdogs_test
-  username: root
-  password: im1coolguy
